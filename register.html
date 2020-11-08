@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,21 +13,23 @@
     <h1 id="title">SRIKAR IT SOLUTIONS</h1>
     <div class="design" style="top: 0px;">
         <div class="design1" ><h1 style="margin-top:10px;">Register</h1></div>
-    <form action="regsuccess.html">
+    <form id="form1" action="regsuccess.html">
         <label for="">Name</label><br>
-        <input  class="i" type="text" required>
+        <input  class="i" type="text" maxlength="50" pattern="[A-Za-z]{1,30}" title="Please enter characters only" required>
         <br>
         <label for="">Email</label><br>
         <input  class="i" type="email" required>
         <br>
         <label for="">Password</label><br>
-        <input  class="i" type="password" required>
+        <input  class="i" type="password" minlength="8" id="password" required>
+        <i class="fa fa-eye" id="toggle"></i>
         <br>
         <label for="">Confirm Password</label><br>
-        <input  class="i" type="password" required>
+        <input  class="i" type="password" id="confirmPassword" required >
+        <span id="check"></span>
         <br>
         <label for="">Age</label><br>
-        <input  class="i" type="number" min="1" max="100" required>
+        <input  class="i" type="number" min="18" max="100" required>
         <br>
         <label for="">Gender</label><br>
         <input   type="radio" name="gender" required>
@@ -35,11 +38,11 @@
         <label for="">Female</label>
         <br>
         <label for="">Phone No</label><br>
-        <input  class="i" type="tel" pattern="[0-9]{10}" required>
-        <center><button>Register</button></center>
+        <input  class="i" type="tel" pattern="[0-9]{10}" maxlength="10" required>
+        <center><button type="button" id="button">Register</button></center>
     </form>
     <p>Already Registered ? Click here to <a href="login.html">Login</a> !!!       </p>
     </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>

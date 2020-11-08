@@ -1,6 +1,6 @@
 
 .design{
-        color: red;
+        color: blue;
         background-color: white;
         height: fit-content;
         width: 80%;
@@ -26,7 +26,12 @@ body{
     margin: 0;
     
 }
-
+#check{
+    color:red;
+}
+a{
+    color: red;
+}
 .design1{
     color: White;
     background-color:#e6739f;
@@ -36,7 +41,13 @@ body{
     margin: 0;
     text-align: center;
 }
-
+i{
+    float: right;
+    position: relative;
+    bottom: 43px;
+    right: 10px;
+    cursor: pointer;
+}
 
 body{
     font-family: 'Balsamiq Sans', cursive;
