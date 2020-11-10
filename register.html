@@ -17,30 +17,44 @@
         <label for="">Name</label><br>
         <input  class="i" type="text" maxlength="50" pattern="[A-Za-z]{1,30}" title="Please enter characters only" required>
         <br>
+
+
         <label for="">Email</label><br>
         <input  class="i" type="email" required>
         <br>
+
+
         <label for="">Password</label><br>
-        <input  class="i" type="password" minlength="8" id="password" required>
-        <i class="fa fa-eye" id="toggle"></i>
+        <input  class="i" type="password" minlength="8" id="password" onkeyup="checkit()" required>
+        <i class="fa fa-eye" id="toggle0" onclick="toggle(0)"></i>
         <br>
+
+
         <label for="">Confirm Password</label><br>
-        <input  class="i" type="password" id="confirmPassword" required >
-        <span id="check"></span>
+        <input  class="i" type="password" id="confirmPassword"  onkeyup="checkit()" required >
+        <i class="fa fa-eye" id="toggle1" onclick="toggle(1)"></i>
+        <center><span id="check"></span></center>
         <br>
+
+
         <label for="">Age</label><br>
         <input  class="i" type="number" min="18" max="100" required>
         <br>
+
+
         <label for="">Gender</label><br>
         <input   type="radio" name="gender" required>
         <label for="">Male</label>
         <input   type="radio" name="gender" required>
         <label for="">Female</label>
         <br>
+
         <label for="">Phone No</label><br>
         <input  class="i" type="tel" pattern="[0-9]{10}" maxlength="10" required>
-        <center><button type="button" id="button">Register</button></center>
+        <center><button type="submit" id="button">Register</button></center>
     </form>
+
+
     <p>Already Registered ? Click here to <a href="login.html">Login</a> !!!       </p>
     </div>
     <script src="index.js"></script>

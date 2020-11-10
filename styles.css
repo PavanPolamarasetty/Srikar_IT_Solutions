@@ -28,6 +28,8 @@ body{
 }
 #check{
     color:red;
+    font-size: small;
+    
 }
 a{
     color: red;
@@ -44,8 +46,8 @@ a{
 i{
     float: right;
     position: relative;
-    bottom: 43px;
-    right: 10px;
+    bottom: 40px;
+    right: 15px;
     cursor: pointer;
 }
 
@@ -69,7 +71,7 @@ button{
     padding: 0 20px 0 20px;
     font-size: 30px;
     font-weight: 100;
-    
+
     -webkit-box-shadow: 1px 1px 20px 0 #000000;
     -moz-box-shadow: 1px 1px 20px 0 #000000;
     box-shadow: 1px 1px 20px 0 #000000;
@@ -123,4 +125,8 @@ h1
         width: 25%;
         left: 20%;
     }
+}
+
+#toggle0 ,#toggle1 ,#toggle2{
+    font-size:small;
 }

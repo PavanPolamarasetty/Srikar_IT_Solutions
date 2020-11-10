@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Login</title>
 </head>
@@ -16,16 +17,18 @@
             <table>
                 
                     <tr><label class="l"for="">Email</label><br></tr>
-                    <tr><input  class="i" type="email" required><br></tr>
+                    <tr><input  class="i" id="mail"type="email" onkeyup="buttonCheck()" required><br></tr>
                     <tr><label for="" class="l">Password</label><br></tr>
-                    <tr><input type="password"  class="i" required><br></tr>
+                    <input type="password"  id="loginPassword" onkeyup="buttonCheck()" class="i" required>
+                        <i class="fa fa-eye" id="toggle2" onclick="toggle(2)"></i>
+                   
                 
             </table>
             
-            <center><button>➡</button></center>
+            <center><button id="loginButton" >➡</button></center>
         </form>
         <p>Not yet Registered? <a href="register.html">Register Here!</a></p></div>
-    
+    <script src="index.js"></script>
 </body>
 
 </html>
